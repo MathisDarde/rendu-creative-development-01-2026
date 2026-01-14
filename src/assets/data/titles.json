@@ -1,0 +1,58 @@
+[
+  {
+    "index": "1",
+    "title": "Emerald Moon",
+    "artist": "Lil Uzi Vert",
+    "imageUrl": "./src/assets/img/lune.png",
+    "desc": "Un titre très atmosphérique, pensé pour installer une ambiance nocturne et introspective. Uzi y explore un côté plus émotionnel, avec des mélodies planantes et une énergie douce. Le morceau pose le décor de l’univers du projet."
+  },
+  {
+    "index": "2",
+    "title": "Anakin",
+    "artist": "Lil Uzi Vert",
+    "imageUrl": "./src/assets/img/tatooine.png",
+    "desc": "Un morceau plus brut et déterminé, centré sur l’ambition et la progression. L’énergie est directe, portée par un flow précis et une production sèche. C’est un titre qui traduit la faim et la volonté d’aller plus loin."
+  },
+  {
+    "index": "3",
+    "title": "Baby Pluto Pt. 2",
+    "artist": "Lil Uzi Vert ft. Future",
+    "imageUrl": "./src/assets/img/pluton.png",
+    "desc": "Suite directe de l’alter ego Baby Pluto, ce morceau est froid et affirmé. Uzi adopte une posture détachée, presque intouchable, avec une production lourde et minimaliste. Il renforce son imageUrl de figure dominante dans son univers."
+  },
+  {
+    "index": "4",
+    "title": "Outta This World",
+    "artist": "Lil Uzi Vert ft. 21 Savage",
+    "imageUrl": "./src/assets/img/terre.png",
+    "desc": "Un titre énergique et accessible, pensé pour connecter avec le public. Uzi y célèbre sa singularité et son parcours, sur une production dynamique. Le morceau apporte une vraie montée d’énergie dans le projet."
+  },
+  {
+    "index": "5",
+    "title": "Jupiter's Diary",
+    "artist": "Lil Uzi Vert",
+    "imageUrl": "./src/assets/img/jupiter.png",
+    "desc": "Un morceau plus personnel et réfléchi. Uzi prend le temps de poser ses pensées, ses doutes et ses réussites. La production est ample et immersive, laissant de l’espace au message."
+  },
+  {
+    "index": "6",
+    "title": "Venus Mode",
+    "artist": "Lil Uzi Vert ft. Eve",
+    "imageUrl": "./src/assets/img/venus.png",
+    "desc": "Un titre plus mélodique, axé sur les relations et l’attraction. L’ambiance est fluide et moderne, avec une approche plus émotionnelle. C’est un morceau qui apporte de la légèreté et de la sensualité au projet."
+  },
+  {
+    "index": "7",
+    "title": "Red Dust",
+    "artist": "Lil Uzi Vert",
+    "imageUrl": "./src/assets/img/mars.png",
+    "desc": "Un morceau intense, construit autour de la confrontation et de la survie. L’énergie est forte, presque agressive, avec une production percutante. Il traduit l’état d’esprit combatif d’Uzi."
+  },
+  {
+    "index": "8",
+    "title": "Sunshyne",
+    "artist": "Lil Uzi Vert",
+    "imageUrl": "./src/assets/img/soleil.png",
+    "desc": "Un titre lumineux et optimiste, pensé comme une conclusion positive. Uzi y exprime un sentiment de liberté et d’accomplissement. L’ambiance est chaleureuse et laisse une impression de réussite et d’apaisement."
+  }
+]

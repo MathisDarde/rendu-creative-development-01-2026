@@ -1,1 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+.font-Montserrat {
+  font-family: "Montserrat";
+}
+.font-Funnel_Display {
+  font-family: "Funnel Display", sans-serif;
+}
+
+/* index.css */
+
+@keyframes moveStars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #000;
+  overflow: hidden;
+}
+
+.star-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.stars-1 {
+  width: 1px;
+  height: 1px;
+  box-shadow: 100px 100px #fff, 200px 500px #fff, 400px 100px #fff,
+    600px 800px #fff, 800px 400px #fff, 1000px 200px #fff, 1200px 900px #fff,
+    1400px 300px #fff, 1600px 700px #fff, 1900px 100px #fff, 300px 300px #fff,
+    750px 600px #fff, 1400px 1500px #fff, 200px 1800px #fff, 900px 1300px #fff,
+    1700px 1100px #fff, 500px 1400px #fff, 1100px 1700px #fff, 150px 950px #fff,
+    1850px 1450px #fff;
+  animation: moveStars 15s linear infinite, twinkle 3s ease-in-out infinite;
+}
+
+.stars-2 {
+  width: 2px;
+  height: 2px;
+  box-shadow: 150px 150px #fff, 350px 450px #fff, 700px 250px #fff,
+    1100px 550px #fff, 1500px 150px #fff, 1800px 650px #fff, 250px 950px #fff,
+    950px 850px #fff, 1350px 1250px #fff, 550px 1650px #fff, 1650px 1750px #fff;
+  animation: moveStars 30s linear infinite, twinkle 4s ease-in-out infinite 1s;
+}
+
+.stars-3 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 400px 400px #fff, 1200px 800px #fff, 800px 1600px #fff,
+    1600px 200px #fff, 200px 1400px #fff;
+  filter: blur(1px);
+  animation: moveStars 45s linear infinite;
+}
+
+.stars-1::after,
+.stars-2::after,
+.stars-3::after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: inherit;
+  height: inherit;
+  box-shadow: inherit;
+  border-radius: inherit;
+}

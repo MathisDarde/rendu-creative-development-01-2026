@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Album } from "./_components/Album";
+import { Header } from "./_components/Header";
+import { Tracklist } from "./_components/Tracklist";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="relative min-h-screen flex flex-col overflow-x-hidden py-24 scroll-smooth">
+      <div className="stars-container">
+        <div className="star-layer stars-1"></div>
+        <div className="star-layer stars-2"></div>
+        <div className="star-layer stars-3"></div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
 
-export default App
+      <Header />
+
+      <div className="relative">
+        <div id="album" className="absolute -top-40" />
+        <Album />
+      </div>
+
+      <div className="relative">
+        <div id="tracklist" className="absolute -top-32" />
+        <Tracklist />
+      </div>
+    </div>
+  );
+}
