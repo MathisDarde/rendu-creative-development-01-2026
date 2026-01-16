@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "color1": "#E2E2E2",
+    "color2": "#8E8D8D",
+    "color3": "#454545",
+    "backgroundColor": "#BDBDBD"
+  },
+  {
+    "id": 2,
+    "color1": "#FFD8EB",
+    "color2": "#FF74B0",
+    "color3": "#F81E96",
+    "backgroundColor": "#F8A5BF"
+  },
+  {
+    "id": 3,
+    "color1": "#C8FFC8",
+    "color2": "#A4E5A4",
+    "color3": "#7CCD78",
+    "backgroundColor": "#5D8C4F"
+  },
+  {
+    "id": 4,
+    "color1": "#CCD8FF",
+    "color2": "#6C84D7",
+    "color3": "#475CA3",
+    "backgroundColor": "#A5B4E8"
+  },
+  {
+    "id": 5,
+    "color1": "#DF946A",
+    "color2": "#E1A0A0",
+    "color3": "#85BD33",
+    "backgroundColor": "#DBD3D2"
+  }
+]

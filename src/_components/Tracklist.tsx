@@ -14,18 +14,43 @@ export const Tracklist = () => {
   const [activeTitle, setActiveTitle] = useState<Title>(
     titles.find((t: Title) => t.index === "1")!
   );
+
+  const onNext = () => {
+    const currentIndex = parseInt(activeTitle.index);
+    const nextTitle = titles.find(
+      (t: Title) => parseInt(t.index) === currentIndex + 1
+    );
+    if (nextTitle) {
+      setActiveTitle(nextTitle);
+    }
+  };
+
+  const onPrev = () => {
+    const currentIndex = parseInt(activeTitle.index);
+    const prevTitle = titles.find(
+      (t: Title) => parseInt(t.index) === currentIndex - 1
+    );
+    if (prevTitle) {
+      setActiveTitle(prevTitle);
+    }
+  };
+
   return (
     <>
-      <h2 className="font-Funnel_Display font-bold text-white text-6xl p-8 uppercase text-center">
+      <h2 className="font-Funnel_Display font-bold text-white text-4xl sm:text-6xl p-8 uppercase text-center">
         Tracklist
       </h2>
 
-      <div className="flex flex-1 items-center">
-        <div className="flex-grow">
-          <TracklistSingle activeTitle={activeTitle} />
+      <div className="flex flex-1 flex-col lg:flex-row items-center">
+        <div className="grow p-8 lg:p-0">
+          <TracklistSingle
+            activeTitle={activeTitle}
+            onNext={onNext}
+            onPrev={onPrev}
+          />
         </div>
 
-        <div className="w-[300px] flex flex-col gap-4 text-white pr-10 h-fit ml-8">
+        <div className="w-75 flex flex-col gap-4 text-white pr-10 h-fit ml-8">
           {titles.map((title: Title) => {
             const isActive = activeTitle?.index === title.index;
 
